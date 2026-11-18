@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      background-color: darkblue;
+      /* Wait 1s, then run the fadeToGray animation over 2 seconds, and keep the final color */
+      animation: fadeToGray 2s ease 1s forwards;
+      padding-bottom: 40px;
+    }
+
+    a {
+      color: cornflowerblue;
+    }
+
+    ul {
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    /* Centered 5-Photo Gallery Styling */
+    .photo-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      max-width: 700px;
+      margin: 20px auto 10px auto;
+      padding: 0 15px;
+    }
+
+    .photo-gallery img {
+      width: 210px;
+      height: 210px;         /* Keeps all photos uniform squares */
+      object-fit: cover;     /* Prevents stretching */
+      border-radius: 8px;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    /* Small note below the photos */
+    .photo-note {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: 5px;
+      font-style: italic;
+    }
+
+    @keyframes fadeToGray {
+      from { background-color: darkblue; }
+      to { background-color: gray; }
+    }
+  </style>
+</head>
+<body>
+  <h2>About</h2>
+  <p>Hello, I am 14 years old and I am in my freshman year of high school.</p>
+  <a href="mailto:Kelton.jenkins@malad.us">Contact Me</a>
+
+  <h3>My Hobbies</h3>
+  <ul>
+    <li>Riding Enduro Motocross</li>
+    <li>Photography</li>
+    <li>Fishing</li>
+    <li>Baseball</li>
+  </ul>
+
+  <h3>My Favorite Photos</h3>
+  <div class="photo-gallery">
+    <img src="20261101_120129.jpg" alt="Favorite photo 1">
+    <img src="20261115_103318.jpg" alt="Favorite photo 2">
+    <img src="20261115_101607.jpg" alt="Favorite photo 3">
+    <img src="DSC_0168(1).jpg" alt="Favorite photo 4">
+    <img src="DSC_0072.jpg" alt="Favorite photo 5">
+  </div>
+  <p class="photo-note">Photos have a decreased quality.</p>
+</body>
+</html>
